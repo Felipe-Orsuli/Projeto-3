@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akali - The Rogue Assassin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        akali: {
+                            primary: '#5D5CDE',
+                            secondary: '#1ABC9C',
+                            accent: '#FF5050'
+                        }
+                    }
+                }
+            }
+        }
+        
+        // Check for dark mode preference
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        
+        // Listen for changes in color scheme preference
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+    </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <header class="mb-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-3 text-akali-primary">Akali</h1>
+            <h2 class="text-xl md:text-2xl italic text-akali-secondary">A Assassina Renegada</h2>
+        </header>
+        
+        <div class="mb-8">
+            <img src="https://pfst.cf2.poecdn.net/base/image/b3f580ed9395f4d2a822ed4134829b3f342254edb389922e3a2293f18f835f9b?w=152&h=172" alt="Akali - A Assassina Renegada" class="w-full h-auto object-contain rounded-lg shadow-lg mb-4" style="max-height: 500px; margin: 0 auto; display: block;">
+            <p class="text-sm text-center text-gray-500 dark:text-gray-400">Akali - A Assassina Renegada</p>
+        </div>
+        
+        <section class="mb-8">
+            <h3 class="text-2xl font-semibold mb-4 text-akali-accent">História</h3>
+            <p class="mb-4">
+                Abandonando a Ordem Kinkou e seu título de Punho das Sombras, Akali agora ataca sozinha, pronta para ser a arma mortal que seu povo precisa. Embora ela mantenha tudo o que aprendeu com seu mestre Shen, ela se comprometeu a defender Ionia de seus inimigos, um assassinato de cada vez. Akali pode atacar em silêncio, mas sua mensagem será ouvida em alta voz: "Tema a assassina sem mestre."
+            </p>
+            <p>
+                Nascida em Ionia, Akali foi treinada desde jovem pela Ordem Kinkou, onde aprendeu técnicas de assassinato e sigilo. Porém, insatisfeita com as regras restritivas da Ordem e sua abordagem passiva aos problemas de Ionia, Akali decidiu seguir seu próprio caminho.
+            </p>
+        </section>
+        
+        <section class="mb-8">
+            <h3 class="text-2xl font-semibold mb-4 text-akali-accent">Habilidades</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                    <h4 class="font-bold mb-2">Assassina Marcada (Passiva)</h4>
+                    <p>Ataques ou habilidades que danificam um campeão criam um anel ao redor deles. Sair e entrar novamente no anel concede a Akali velocidade de movimento e dano aumentado em seu próximo ataque.</p>
+                </div>
+                <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                    <h4 class="font-bold mb-2">Lança de Cinco Pontas (Q)</h4>
+                    <p>Akali lança kunais em forma de leque que causam dano e desaceleram os inimigos atingidos.</p>
+                </div>
+                <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                    <h4 class="font-bold mb-2">Véu de Fumaça (W)</h4>
+                    <p>Akali lança uma bomba de fumaça que cria uma zona que a concede invisibilidade e energia.</p>
+                </div>
+                <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                    <h4 class="font-bold mb-2">Execução Perfeita (E)</h4>
+                    <p>Akali lança uma shuriken presa a um cabo e pode lançar-se para qualquer inimigo ou unidade atingida.</p>
+                </div>
+                <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg md:col-span-2">
+                    <h4 class="font-bold mb-2">Execução Suprema (R)</h4>
+                    <p>Akali avança em um alvo inimigo com um dash, causando dano. Após um breve período, ela pode usar esta habilidade novamente para executar um dash em direção a uma área, causando dano massivo.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h3 class="text-2xl font-semibold mb-4 text-akali-accent">Dicas de Jogabilidade</h3>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Use o Véu de Fumaça (W) para ganhar invisibilidade e iniciar ou escapar de combates.</li>
+                <li>Combine sua passiva com seus ataques básicos para maximizar o dano.</li>
+                <li>Execução Perfeita (E) pode ser usada para escapar por sobre paredes da selva.</li>
+                <li>Sua ultimate (R) tem duas partes - use a primeira para se aproximar e a segunda para o golpe final.</li>
+                <li>Akali é mais eficaz quando pega inimigos isolados, longe de suas equipes.</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8">
+            <h3 class="text-2xl font-semibold mb-4 text-akali-accent">Galeria de Skins</h3>
+            <p class="mb-4">Akali possui diversas skins incríveis que transformam completamente sua aparência. Confira algumas delas:</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="https://pfst.cf2.poecdn.net/base/image/83af28723bc2cfdfa727ddf2005e80fb3be123f10f8904e79116c94c253716e2?w=292&h=172" alt="Akali K/DA" class="w-full h-64 object-cover">
+                    <div class="p-3">
+                        <h4 class="font-bold">Akali K/DA</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Parte do grupo pop virtual K/DA com Ahri, Evelynn e Kai'Sa</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="https://pfst.cf2.poecdn.net/base/image/20ffe64e80f4243db6fd91acef4c0ab3a676fae1cdaced8a320680988960018b?w=292&h=172" alt="Akali True Damage" class="w-full h-64 object-cover">
+                    <div class="p-3">
+                        <h4 class="font-bold">Akali True Damage</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Membro do grupo de hip-hop True Damage</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="https://pfst.cf2.poecdn.net/base/image/55c2b391e2eccd77aa86042ae9913285b0c31f088095f4a9f17cc5a69899a39e?w=292&h=172" alt="Akali Blood Moon" class="w-full h-64 object-cover">
+                    <div class="p-3">
+                        <h4 class="font-bold">Akali Blood Moon</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Uma demoníaca versão do universo Blood Moon</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="https://pfst.cf2.poecdn.net/base/image/ad4294c810ada6cca1ea6402d9a6192f6f3f15daea72d4a1feccd4e7cea1004a?w=300&h=168" alt="Akali Star Guardian" class="w-full h-64 object-cover">
+                    <div class="p-3">
+                        <h4 class="font-bold">Akali Star Guardian</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Uma guardiana estelar com poderes mágicos</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="https://pfst.cf2.poecdn.net/base/image/d6a4b63085389a5ab9c3a8522fbe006e12528f1517cb7235f3b7e8c448386681?w=292&h=172" alt="Akali Prestige K/DA" class="w-full h-64 object-cover">
+                    <div class="p-3">
+                        <h4 class="font-bold">Akali Prestige K/DA</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Versão dourada prestigiada da skin K/DA</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="https://pfst.cf2.poecdn.net/base/image/05570839423de42a24b156e1e09288c2883c3639b597f3f7c2857659c827a39a?w=292&h=172" alt="Akali Nurse" class="w-full h-64 object-cover">
+                    <div class="p-3">
+                        <h4 class="font-bold">Akali Enfermeira</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Uma das skins clássicas e mais antigas da Akali</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="flex justify-center mb-10">
+            <a href="https://www.leagueoflegends.com/pt-br/champions/akali/" target="_blank" class="bg-akali-primary hover:bg-opacity-90 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-transform hover:scale-105 flex items-center">
+                <span>Visite a página oficial da Akali</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+            </a>
+        </div>
+        
+        <footer class="text-center text-gray-500 dark:text-gray-400 text-sm">
+            <p>Esta página foi criada apenas para fins educacionais.</p>
+            <p class="mt-2">Akali e League of Legends são propriedades da Riot Games.</p>
+        </footer>
+    </div>
+</body>
+</html>
